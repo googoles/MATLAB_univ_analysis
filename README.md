@@ -7,3 +7,6 @@ This repository is for analysis
 
 1. 첫번째 과제
 단순계산 3개 작성 후 pdf제출
+
+2. 두번째 과제
+4개의 문제 해결 및 함수설명
