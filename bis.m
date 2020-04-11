@@ -7,7 +7,7 @@ function bis(f,a,b,n, eps1, eps2)
 fa = feval(f,a);
 fb = feval(f,b);
 
-disp('iterationk  a       b           c       |f(c)|     |b-a|')
+disp('it  a       b           c       |f(c)|     |b-a|')
 disp('-------------------------------------------')
 for k = 1:n
     
@@ -21,7 +21,8 @@ for k = 1:n
         break
     end
 %     fc = feval(f,c)
-    format rat
+ 
+%     format rat
     
     fprintf('%d %9.6f %9.6f %9.6f %9.6f %9.6f \n',k,a,b,c,abs(fc),abs(b-a)) % 유효숫자 6자
     
