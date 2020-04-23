@@ -10,20 +10,15 @@ fb = feval(f,b);
 disp('it  a       b           c       |f(c)|     |b-a|')
 disp('-------------------------------------------')
 for k = 1:n
-    
-    len = abs(b-a);
-    
-    
+%     fa = feval(f,a);
+%     fb = feval(f,b);
+    len = abs(b-a); 
     c =(a+b)/2;
-    fc = feval(f,b);
-    if len<eps1 | abs(fc) < eps2
+    fc = feval(f,c);
+    if len<eps1 || abs(fc) < eps2
         fprintf('Approximate solution = %9.6f \n', c)
         break
     end
-%     fc = feval(f,c)
- 
-%     format rat
-    
     fprintf('%d %9.6f %9.6f %9.6f %9.6f %9.6f \n',k,a,b,c,abs(fc),abs(b-a)) % 유효숫자 6자
     
     if fa*fc<0

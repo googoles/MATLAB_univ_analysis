@@ -15,3 +15,7 @@ disp(C)
 p = [3 -2 -4];
 r = roots(p);
 disp(r);
+
+a = 30;
+sin(a)
+

@@ -27,8 +27,8 @@ if u*v <= 0
         err = abs(b-a)*0.5;
     end;
     if (iter>n)
-        disp('Method failed to converge')
-    end;
+    fprintf('Approx solution: %9.2f\n', b)
+    end
 else
     disp(' The method cannot be applied f(a)f(b) > 0')
 end
