@@ -13,7 +13,7 @@ for k = 1:n
     yp = feval(J,x);
     x1 = x-yp\y;
     
-    err = max(abs(x1-x))
+    err = max(abs(x1-x));
     if err < eps1
         fprintf('Approx Sol: %9.4f, %9.4f\n',x1)
         break
